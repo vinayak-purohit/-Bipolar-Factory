@@ -46,7 +46,7 @@ const productMap: Record<string, ProductData> = {
       'Custom Alert Rules & Escalation',
       'Deployed by Government Entities',
     ],
-    image: '/oly_store_sync.png',
+    image: '/oly_control_center.png',
   },
   metawood: {
     name: 'Metawood',

@@ -42,7 +42,7 @@ const Products = () => {
               className="glass-panel p-6 rounded-2xl overflow-hidden group h-full"
             >
               <div className="h-64 mb-6 rounded-lg overflow-hidden bg-black/50 relative border border-white/5">
-                 <img src="/oly_store_sync.png" alt="OLY Control Center" className="w-full h-full object-cover filter hue-rotate-180 opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" />
+                 <img src="/oly_control_center.png" alt="OLY Control Center" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" />
               </div>
               <h3 className="text-2xl font-bold mb-2">OLY Control Center</h3>
               <p className="text-gray-400 mb-4">A centralized Video Management System (VMS) with a comprehensive data-driven dashboard.</p>
