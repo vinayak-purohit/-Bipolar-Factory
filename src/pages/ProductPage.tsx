@@ -126,10 +126,16 @@ const ProductPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors">
+              <button 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors"
+              >
                 Request a Demo
               </button>
-              <button className="px-8 py-3.5 rounded-full border border-white/20 text-white font-semibold hover:bg-white/5 transition-colors">
+              <button 
+                onClick={() => document.getElementById('capabilities')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-3.5 rounded-full border border-white/20 text-white font-semibold hover:bg-white/5 transition-colors"
+              >
                 Technical Specs
               </button>
             </div>
@@ -163,7 +169,7 @@ const ProductPage = () => {
       {/* ─────────────────────────────────────────────────────────────
           2. CAPABILITIES GRID & 3D VISUALIZATION
       ───────────────────────────────────────────────────────────── */}
-      <section className="py-16 px-6 max-w-7xl mx-auto relative z-10">
+      <section id="capabilities" className="py-16 px-6 max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

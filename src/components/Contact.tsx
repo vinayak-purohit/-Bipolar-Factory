@@ -3,7 +3,7 @@ import { Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <footer className="py-24 px-4 bg-background relative overflow-hidden border-t border-white/5">
+    <footer id="contact" className="py-24 px-4 bg-background relative overflow-hidden border-t border-white/5">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 relative z-10">
         <div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Every Client Is a Valuable Long-Term Partner</h2>
@@ -20,7 +20,10 @@ const Contact = () => {
             
             <div className="flex items-center">
               <Mail className="text-primary mr-4" />
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">hello@bipolarfactory.com</a>
+              <div className="flex flex-col">
+                <a href="mailto:hello@bipolarfactory.com?subject=Demo%20Request" className="text-gray-400 hover:text-white transition-colors">hello@bipolarfactory.com</a>
+                <span className="text-xs text-primary mt-1">Want to request a demo? Drop us an email!</span>
+              </div>
             </div>
           </div>
 
