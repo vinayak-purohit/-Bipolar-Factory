@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Products from '../components/Products';
+import AboutUs from '../components/AboutUs';
 import TechPartnership from '../components/TechPartnership';
 import CaseStudies from '../components/CaseStudies';
 import Contact from '../components/Contact';
@@ -26,6 +27,10 @@ const HomePage = () => {
   return (
     <>
       <Hero />
+      <div id="about-us">
+        <AboutUs />
+      </div>
+      <div className="border-t border-white/5"></div>
       <div id="products">
         <Products />
       </div>

@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
@@ -76,6 +76,10 @@ const productMap: Record<string, ProductData> = {
 const ProductPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const product = slug ? productMap[slug] : null;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   if (!product) {
     return (

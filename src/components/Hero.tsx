@@ -253,7 +253,10 @@ const Hero = () => (
         transition={{ duration: 0.7, delay: 0.4 }}
         className="flex gap-4 justify-center pointer-events-auto mt-10"
       >
-        <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors shadow-lg shadow-white/10">
+        <button 
+          onClick={() => document.getElementById('about-us')?.scrollIntoView({ behavior: 'smooth' })}
+          className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors shadow-lg shadow-white/10"
+        >
           Know More About Us
         </button>
       </motion.div>
